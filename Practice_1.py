@@ -87,11 +87,18 @@ Please choose an option:
   else:
     flag_1 = False
 
-print("Factura:")
-print("Name - Quantity - Price")
+print("Ticket:")
+print("""
+-----------------------------------------
+      Name - Quantity - Price
+-----------------------------------------
+      """)
 value = 0
 for product in products:
   value += product['price'] * product['quantity']
   print(f"{product['name']} - {product['quantity']} - {product['price']}")
 
-print(f"Total: {value}")
+print(f"""
+-----------------------------------------
+      Total to pay: {value}
+""")
