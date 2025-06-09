@@ -90,7 +90,7 @@ Please choose an option:
 print("Ticket:")
 print("""
 -----------------------------------------
-      Name - Quantity - Price
+      Name - Price - Quantity
 -----------------------------------------
       """)
 value = 0
