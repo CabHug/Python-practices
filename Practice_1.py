@@ -19,15 +19,15 @@ stock = {
 }
 #Products
 products = []
-
+#Fucntion to read a listo and print everi item
 def readList(list):
   for key in list:
     print(f"{key}")
   print(f"Exit")
-
+#Function to clean and format text
 def cleanTxT(txt):
   return txt.lower().capitalize()
-
+#Fucntion to validate an item against a list
 def listVal(item, list):
   if item not in list:
     print("Invalid option")
@@ -35,9 +35,9 @@ def listVal(item, list):
 
 print(f"Welcome to {dataConfig['name']}")
 
-
+#Variable flag to keep on big loop
 flag_1 = True
-
+#Big loop to kepp showing menu
 while flag_1 == True:
   print("Please know our stock, choose one: ")
   readList(list(stock.keys()))
