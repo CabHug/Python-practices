@@ -27,3 +27,12 @@ primeNum = iter(primeNumbers)
 print(next(primeNum))
 for n in primeNum:
     print(n)
+
+
+#Generator to show even and odd numbers
+limit = 10
+
+def kindOfNum(n):
+    for i in range(1,n+1):
+        if(i%2 == 0):
+            
