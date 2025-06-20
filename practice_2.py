@@ -1,6 +1,8 @@
 #Objetivo: Crear una lista de números del 1 al 100, filtrar los números primos utilizando comprensión de listas, y luego usar un generador para recorrerlos 
 # de manera perezosa (lazy), sumando los que sean mayores a un cierto valor dado por el usuario.
 
+limit = 100
+
 #fucntion to fetch prime numbers
 def isPrime(n):
     if(n <= 1):
@@ -16,7 +18,7 @@ def isPrime(n):
     return True
 
 
-list = [i for i in range(1, 101)]
+list = [i for i in range(1, limit+1)]
 print(list)
 
 primeNumbers = [ n for n in list if(isPrime(n) == True)]
@@ -30,9 +32,10 @@ for n in primeNum:
 
 
 #Generator to show even and odd numbers
-limit = 10
-
-def kindOfNum(n):
+def evenNum(n):
     for i in range(1,n+1):
         if(i%2 == 0):
-            
+            yield i
+
+for num in kindOfNum(limit):
+    print(num)
