@@ -6,9 +6,10 @@ class Library:
 
     def getInvet(self):
         if self.inventary:
-            print("We don't have invenraty yet :c")
+            for i in self.inventary:
+                print(i.name)
         else:
-            print(self.inventary)
+            print("We don't have invenraty yet :c")
 
     def setInvent(self, name):
         self.inventary.append(name)
