@@ -41,6 +41,20 @@ class BackAccount:
         choice = int(input("Ingrese su opcion: "))
         if choice == 1:
           self.status = not self.status
-          print(f"Nuevo estatus: {"Activa" if self.status else "Inactiva"}")
+          print(f"Nuevo estatus: {'Activa' if self.status else 'Inactiva'}")
+          break
+        elif(choice == 2):
+          print(f"Estatus: {'Activa' if self.status else 'Inactiva'}")
+          break
+        else:
+          break
       except ValueError:
         print("Opçion invalida, ingrese un numero")
+
+    
+
+## Definicion de clases
+Luis_ACC = BackAccount("Luis C", 1000)
+#-> Uso de metodos
+Luis_ACC.accountStatus()
+Luis_ACC.deposit
