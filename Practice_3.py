@@ -13,7 +13,7 @@ class BackAccount:
 
   def retirar(self, amount):
     if self.status:
-      if self.blanance >= amount:
+      if self.balance >= amount:
         self.balance -= amount
         print(f"Retiro exitoso! balance actual {self.balance}")
       else:
@@ -57,4 +57,7 @@ class BackAccount:
 Luis_ACC = BackAccount("Luis C", 1000)
 #-> Uso de metodos
 Luis_ACC.accountStatus()
-Luis_ACC.deposit
+Luis_ACC.deposit(5000)
+Luis_ACC.setStatus()
+Luis_ACC.accountStatus()
+Luis_ACC.retirar(7000)
