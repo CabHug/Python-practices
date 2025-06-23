@@ -7,6 +7,11 @@ class Library:
     def getInvet(self):
         if self.inventary:
             print("We don't have invenraty yet :c")
+        else:
+            print(self.inventary)
+
+    def setInvent(self, name):
+        self.inventary.append(name)
 
 class Book:
     def __init__(self, name):
@@ -22,4 +27,17 @@ class Book:
             print(f"Book setted! current number {self.number}")
         else:
             print(f"Not enought books, current number {self.number}")
+
+
+libro1 = Book("libro1")
+libro1.addBook(5)
+
+libro2 = Book("libro2")
+libro2.addBook(2)
+
+Hugo_library = Library()
+Hugo_library.setInvent(libro1)
+Hugo_library.setInvent(libro2)
+
+Hugo_library.getInvet()
     
