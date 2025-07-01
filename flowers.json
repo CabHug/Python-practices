@@ -1,0 +1,37 @@
+[
+    {
+        "Name": "Rose",
+        "Color": "Red",
+        "Height_cm": "60",
+        "Fragrance": "High",
+        "Season": "Spring"
+    },
+    {
+        "Name": "Tulip",
+        "Color": "Yellow",
+        "Height_cm": "45",
+        "Fragrance": "Medium",
+        "Season": "Spring"
+    },
+    {
+        "Name": "Lily",
+        "Color": "White",
+        "Height_cm": "70",
+        "Fragrance": "High",
+        "Season": "Summer"
+    },
+    {
+        "Name": "Sunflower",
+        "Color": "Yellow",
+        "Height_cm": "150",
+        "Fragrance": "Low",
+        "Season": "Summer"
+    },
+    {
+        "Name": "Orchid",
+        "Color": "Purple",
+        "Height_cm": "40",
+        "Fragrance": "Medium",
+        "Season": "All year round"
+    }
+]
