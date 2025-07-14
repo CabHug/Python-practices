@@ -45,3 +45,25 @@ print(f"Max sales on month {total_sales_nonth[0,max]} is: {total_sales_nonth[1,m
 min = np.argmin(total_sales)
 print(f"Max sales on month {total_sales_nonth[0,min]} is: {total_sales_nonth[1,min]}")
 
+# Paso 4 Operaciones avanzadas con numpy
+
+sales_2D = np.array(np.split(sales_matrix.flatten(), 2), dtype=int)
+print(sales_2D)
+
+sales_matrix2 = np.array(sales_matrix.flatten().reshape(3,4,3), dtype=int)
+print(sales_matrix2)
+
+# Paso 5: Analisis de elementos unicos
+
+datos_unicos, index, count = np.unique(sales_matrix.flatten(), return_index= True, return_counts=True)
+print(np.vstack((datos_unicos, index, count)))
+
+matriz_position = np.vstack((datos_unicos, index, count)).T
+
+for i in matriz_position:
+    print(f"Valor unico: {i[0]}, index {i[1]}, cantidad {i[2]}")
+
+# Step 6: Indexacion y slicing
+
+sales_Q1 = sales_matrix[:,0:3]
+print(sales_Q1)
